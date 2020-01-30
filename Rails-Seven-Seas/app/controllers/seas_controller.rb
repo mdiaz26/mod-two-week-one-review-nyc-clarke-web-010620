@@ -1,6 +1,10 @@
 class SeasController < ApplicationController
   #define your controller actions here
 
+  def seas
+    @seas =
+    render index.html.erb
+  end
 
   private
   # In controller actions, use this private method to access sea params from forms.
