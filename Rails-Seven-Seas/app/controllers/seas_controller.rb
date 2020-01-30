@@ -2,8 +2,8 @@ class SeasController < ApplicationController
   #define your controller actions here
 
   def seas
-    @seas =
-    render index.html.erb
+    @seas = Sea.all
+    render "seas/index"
   end
 
   private
